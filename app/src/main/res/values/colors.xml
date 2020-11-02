@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#181717</color>
+    <color name="colorGray">#C5C3C3</color>
+    <color name="colorDarkGray">#A5A4A4</color>
+    <color name="colorLightRed">#F74D4D</color>
+    <color name="colorLighGray">#F3EFEF</color>
+    <color name="lighGray">#F1F1F1</color>
+    <color name="categoryColor">#6DACF3</color>
+    <color name="colorGreen">#58CF6D</color>
+    <color name="colorLightGreen">#3AF15A</color>
+    <color name="colorLighrOrange">#FA6437</color>
+    <color name="colorDarkBlue">#285FBA</color>
+    <color name="hintColor">#837F7F</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorFacebook">#3b5998 </color>
+    <color name="colorInstagram">#bc2a8d </color>
+    <color name="colorYoutube">#c4302b  </color>
+
+    <color name="dot">#649c9c9c</color>
+    <color name="colorTheme">#7DC2FE</color>
+
+    <color name="transparentColor">#4D999898</color>
+    <color name="blackAndWhiter">#65999898</color>
+
+    <color name="hint">#FFFFFF</color>
+
+    <color name="statusBar">#5E5F61</color>
+
+    <color name="gray">#BCD1D1D1</color>
+</resources>

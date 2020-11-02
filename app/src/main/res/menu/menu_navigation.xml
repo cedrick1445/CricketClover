@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/bottom_home_icon"
+        android:title="Events" />
+
+    <item
+        android:id="@+id/navigation_teams"
+        android:icon="@drawable/ic_baseline_people_alt_24"
+        android:title="Teams" />
+
+    <item
+        android:id="@+id/navigation_standings"
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:title="Standings" />
+
+    <item
+        android:id="@+id/navigation_series"
+        android:icon="@drawable/ic_baseline_featured_play_list_24"
+        android:title="Series" />
+
+    <item
+        android:id="@+id/navigation_games"
+        android:icon="@drawable/ic_baseline_sports_cricket_24"
+        android:title="Games" />
+
+</menu>
