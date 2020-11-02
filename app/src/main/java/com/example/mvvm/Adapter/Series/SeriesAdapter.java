@@ -18,6 +18,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class SeriesAdapter extends RecyclerView.Adapter<SeriesAdapter.SeriesViewHolder> {
     CountDownTimer countDownTimer;
     Context context;
@@ -30,7 +32,7 @@ public class SeriesAdapter extends RecyclerView.Adapter<SeriesAdapter.SeriesView
         TextView startDate;
         TextView seriesId;
         TextView endDate;
-        ImageView seriesLogo;
+        CircleImageView seriesLogo;
         public SeriesViewHolder(@NonNull View itemView) {
             super(itemView);
             seriesName = itemView.findViewById(R.id.series_name);

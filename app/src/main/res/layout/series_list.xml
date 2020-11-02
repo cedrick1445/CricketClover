@@ -10,11 +10,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <ImageView
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
             android:id="@+id/series_logo"
             android:layout_width="120dp"
             android:layout_height="120dp"/>
+
         <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -26,6 +33,7 @@
                 android:visibility="invisible"
                 android:textSize="0dp"/>
             <TextView
+                android:fontFamily="@font/robotocondensed"
                 android:id="@+id/series_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -33,19 +41,23 @@
                 android:layout_marginBottom="5dp"
                 android:text="Name"/>
             <TextView
+                android:fontFamily="@font/robotocondensed"
                 android:id="@+id/series_status"
                 android:layout_width="match_parent"
-                android:textStyle="italic"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreen"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Status"/>
             <TextView
+                android:fontFamily="@font/robotocondensed"
                 android:id="@+id/series_start"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
                 android:text="Start Date"/>
             <TextView
+                android:fontFamily="@font/robotocondensed"
                 android:id="@+id/series_end"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

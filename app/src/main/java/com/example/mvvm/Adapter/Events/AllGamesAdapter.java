@@ -69,7 +69,7 @@ public class AllGamesAdapter extends RecyclerView.Adapter<AllGamesAdapter.AllGam
             holder.homeScore.setText(match.getScores().getHomeScore());
             holder.awayScore.setText(match.getScores().getAwayScore());
             holder.awayName.setText(match.getAwayTeam().getName());
-            holder.date.setText(match.getStartDateTime().substring(0,10));
+            holder.date.setText("Date: " + match.getStartDateTime().substring(0,10));
             holder.status.setText(match.getStatus());
         }
         else {

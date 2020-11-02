@@ -9,11 +9,13 @@
     app:cardCornerRadius="5dp">
 
     <LinearLayout
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
+            android:fontFamily="@font/robotocondensed"
             android:id="@+id/all_games_series"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -24,6 +26,7 @@
             android:textSize="16sp" />
 
         <TextView
+            android:fontFamily="@font/robotocondensedlight"
             android:id="@+id/all_games_venue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,7 +34,9 @@
             android:gravity="center"
             android:text="Venue"
             android:textSize="14sp" />
+
         <TextView
+            android:fontFamily="@font/robotocondensed"
             android:id="@+id/all_games_status"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,6 +45,7 @@
             android:textSize="14sp" />
 
         <TextView
+            android:fontFamily="@font/robotocondensed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
@@ -81,7 +87,9 @@
         </LinearLayout>
 
         </LinearLayout>
+
         <TextView
+            android:fontFamily="@font/robotocondensed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -93,6 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:orientation="horizontal">
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -122,13 +131,17 @@
             </LinearLayout>
 
         </LinearLayout>
+
         <TextView
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/robotocondensed"
             android:id="@+id/all_games_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
             android:layout_marginBottom="5dp"
-            android:textStyle="italic"
+            android:textStyle="bold"
+            android:textColor="@color/colorGreen"
             android:paddingRight="10dp"
             android:text="Date"/>
     </LinearLayout>

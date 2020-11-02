@@ -52,7 +52,7 @@ public class StandingsAdapter extends RecyclerView.Adapter<StandingsAdapter.Stan
     public void onBindViewHolder(@NonNull StandingsViewHolder holder, int position) {
         teamStandingModel = teamStandingModelList.get(position);
         holder.teamName.setText(teamStandingModel.getName());
-        holder.winLose.setText("W: " + teamStandingModel.getWon() + "- L: " + teamStandingModel.getLost()+ " (D: " + teamStandingModel.getTied() + ")");
+        holder.winLose.setText("WIN: " + teamStandingModel.getWon() + "- LOSE: " + teamStandingModel.getLost()+ " (D: " + teamStandingModel.getTied() + ")");
         holder.teamName.setText(teamStandingModel.getName());
         Picasso.get().load(teamStandingModel.getLogoUrl()).into(holder.teamLogo);
     }

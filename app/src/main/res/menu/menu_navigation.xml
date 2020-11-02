@@ -12,14 +12,14 @@
         android:title="Teams" />
 
     <item
-        android:id="@+id/navigation_standings"
-        android:icon="@drawable/ic_baseline_bar_chart_24"
-        android:title="Standings" />
-
-    <item
         android:id="@+id/navigation_series"
         android:icon="@drawable/ic_baseline_featured_play_list_24"
         android:title="Series" />
+
+    <item
+        android:id="@+id/navigation_standings"
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:title="Standings" />
 
     <item
         android:id="@+id/navigation_games"

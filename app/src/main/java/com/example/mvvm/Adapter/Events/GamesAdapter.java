@@ -74,7 +74,7 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.GamesViewHol
             holder.homeScore.setText(match.getScores().getHomeScore());
             holder.awayScore.setText(match.getScores().getAwayScore());
             holder.awayName.setText(match.getAwayTeam().getName());
-            holder.date.setText(match.getStartDateTime().substring(0,10));
+            holder.date.setText("Date Started "+ match.getStartDateTime().substring(0,10));
             holder.status.setText(match.getStatus());
             Picasso.get().load(match.getHomeTeam().getLogoUrl()).into(holder.homeLogo);
             Picasso.get().load(match.getAwayTeam().getLogoUrl()).into(holder.awayLogo);
@@ -86,7 +86,7 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.GamesViewHol
                 holder.venue.setText("Venue: " + match.getVenue().getName());
                 holder.homeName.setText(match.getHomeTeam().getName());
                 holder.awayName.setText(match.getAwayTeam().getName());
-                holder.date.setText(match.getStartDateTime().substring(0,10));
+                holder.date.setText("Date Started " + match.getStartDateTime().substring(0,10));
                 holder.status.setText(match.getStatus());
                 holder.homeLogo.setImageResource(R.drawable.no_image);
                 holder.awayLogo.setImageResource(R.drawable.no_image);
@@ -95,7 +95,7 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.GamesViewHol
                 holder.venue.setText("Venue: " + match.getVenue().getName());
                 holder.homeName.setText(match.getHomeTeam().getName());
                 holder.awayName.setText(match.getAwayTeam().getName());
-                holder.date.setText(match.getStartDateTime().substring(0,10));
+                holder.date.setText("Date Started " +  match.getStartDateTime().substring(0,10));
                 holder.status.setText(match.getStatus());
                 Picasso.get().load(match.getHomeTeam().getLogoUrl()).into(holder.homeLogo);
                 Picasso.get().load(match.getAwayTeam().getLogoUrl()).into(holder.awayLogo);
