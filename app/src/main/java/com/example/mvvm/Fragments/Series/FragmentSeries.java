@@ -46,7 +46,6 @@ public class FragmentSeries extends Fragment {
     }
 
     private void initObserver(){
-        seriesArrayList.clear();
         seriesViewModels = ViewModelProviders.of(this).get(SeriesViewModels.class);
         seriesViewModels.init();
         seriesViewModels.getAllStandingsRepository().observe(this, newsResponse -> {

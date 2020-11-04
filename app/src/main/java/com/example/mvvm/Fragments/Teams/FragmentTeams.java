@@ -46,7 +46,6 @@ public class FragmentTeams extends Fragment {
     }
 
     private void initObserver(){
-        teamsArrayList.clear();
         teamsViewModels = ViewModelProviders.of(this).get(TeamsViewModels.class);
         teamsViewModels.init();
         teamsViewModels.getAllTeamsRepository().observe(this, newsResponse -> {

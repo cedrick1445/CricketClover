@@ -50,7 +50,6 @@ public class FragmentStandings extends Fragment {
     }
 
     private void initObserver(){
-        standingsArrayList.clear();
         standingsViewModels = ViewModelProviders.of(this).get(StandingsViewModels.class);
         standingsViewModels.init();
         standingsViewModels.getAllStandingsRepository().observe(this, newsResponse -> {

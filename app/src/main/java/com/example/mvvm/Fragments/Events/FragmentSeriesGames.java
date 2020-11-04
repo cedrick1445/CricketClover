@@ -69,16 +69,12 @@ public class FragmentSeriesGames extends Fragment {
         LinearLayoutManager llm = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(llm);
 
-        if (adapter == null) {
-            if (articleArrayList.size() > 0) {
-                loadingLayout.setVisibility(View.GONE);
-            } else {
-                loadingLayout.setVisibility(View.VISIBLE);
-            }
-            adapter = new GamesAdapter(getContext(), articleArrayList);
-            recyclerView.setAdapter(adapter);
+        if (articleArrayList.size() > 0) {
+            loadingLayout.setVisibility(View.GONE);
         } else {
-            adapter.notifyDataSetChanged();
+            loadingLayout.setVisibility(View.VISIBLE);
         }
+        adapter = new GamesAdapter(getContext(), articleArrayList);
+        recyclerView.setAdapter(adapter);
     }
 }

@@ -24,10 +24,6 @@ public class SplashScreen extends AppCompatActivity {
 
         imgSplash = findViewById(R.id.imgSplash);
 
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-
         GlideDrawableImageViewTarget imageViewTarget = new GlideDrawableImageViewTarget(imgSplash);
         Glide.with(this).load(R.raw.cricketsplash).into(imageViewTarget);
 
