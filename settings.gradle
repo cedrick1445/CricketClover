@@ -1,2 +1,3 @@
+include ':yqcdownload'
 include ':app'
-rootProject.name = "MVVM"
+rootProject.name = "Cricket Clover"

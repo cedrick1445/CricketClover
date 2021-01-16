@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mvvm">
+    package="com.sports.cricketclover">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
+        android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.Dashboard"></activity>
-        <activity android:name=".View.SplashScreen">
+        <activity android:name="com.sports.cricketclover.View.Dashboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
 
+        </activity>
+        <activity android:name="com.sports.cricketclover.View.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

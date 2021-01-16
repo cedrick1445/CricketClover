@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 30
+        versionCode 2
+        versionName "2.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:30.0.2'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+    implementation 'com.werb.permissionschecker:permissionschecker:0.0.1-beta2'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+
+}

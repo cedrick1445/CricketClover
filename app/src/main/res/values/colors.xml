@@ -18,9 +18,7 @@
     <color name="colorDarkBlue">#285FBA</color>
     <color name="hintColor">#837F7F</color>
     <color name="colorTransparent">#00000000</color>
-    <color name="colorFacebook">#3b5998 </color>
-    <color name="colorInstagram">#bc2a8d </color>
-    <color name="colorYoutube">#c4302b  </color>
+
 
     <color name="dot">#649c9c9c</color>
     <color name="colorTheme">#7DC2FE</color>
